@@ -1,15 +1,5 @@
 # Telegram YouTube Summarizer Bot
 
-A Telegram bot that summarizes YouTube videos using a locally hosted Large Language Model via Ollama.
-
-Unlike cloud-based solutions, this project runs LLM inference locally, ensuring:
-- No external API dependency
-- Lower cost
-- Better privacy
-- Full control over model execution
-
----
-
 ## Overview
 
 Users send a YouTube link to the Telegram bot.  
@@ -21,19 +11,6 @@ The system:
 4. Returns a concise summary to Telegram  
 
 This project demonstrates real-world backend engineering with local AI model deployment.
-
----
-
-## Features
-
-- Automatic YouTube transcript extraction
-- Local LLM-based summarization (Ollama)
-- Telegram bot integration
-- Fast response time
-- Privacy-friendly (no external LLM APIs)
-- Robust error handling
-
----
 
 ## System Architecture
 
@@ -49,26 +26,19 @@ Generated Summary
    ↓  
 Telegram Response  
 
----
 
-## Tech Stack
-
-- Python
-- Ollama (Local LLM Runtime)
-- YouTube Transcript API
-- Telegram Bot API
-- Virtual Environment (venv)
-
----
-
+## Project Structure
 ```
 telegram-youtube-summarizer/
 │
 ├── bot.py
+├── config.py
+├── qa_engine.py
 ├── summarizer.py
-├── test_transcript.py
+├── transcript.py
+├── translator.py
+├── utils.py
 ├── requirements.txt
-├── .env.example
 ├── .gitignore
 └── README.md
 ```
@@ -111,7 +81,8 @@ python bot.py
 ### Example Usage
 **Try the bot here:**
 Open Telegram
-https://t.me/@VideoInsightsBot
+[Video Insights Bot](https://t.me/VideoInsightsBot)
+
 
 Open the link above  
 Click **Start**  
@@ -123,3 +94,4 @@ User can ask multiple follow-up questions like
 2. Practical action points from the transcript,
 3. provide detailed explaination,
 4. Ask anything related to Video, etc..,
+
