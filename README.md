@@ -10,8 +10,6 @@ The system:
 3. Sends it to a locally running LLM (via Ollama)  
 4. Returns a concise summary to Telegram  
 
-This project demonstrates real-world backend engineering with local AI model deployment.
-
 ## System Architecture
 
 User  
@@ -94,4 +92,5 @@ User can ask multiple follow-up questions like
 2. Practical action points from the transcript,
 3. provide detailed explaination,
 4. Ask anything related to Video, etc..,
+
 
